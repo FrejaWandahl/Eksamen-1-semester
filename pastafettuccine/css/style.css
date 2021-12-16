@@ -1,0 +1,1085 @@
+/* Eksamens projekt - Freja Wandahl Petersen */
+
+
+/* Variabler: genbruges og gør designvalg enkle */
+:root {
+  --hvid: #ffffff;
+  --sort: #000000;
+  --blue: #2e324e;
+  --orangel: #f0c58c;
+  --orangem: #e8b46d;
+  --grey: #e1dfd3;
+}
+
+/*Fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
+/*font-family: 'Lora', serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
+/*font-family: 'Dancing Script', cursive;*/
+
+/* Samlet layout opstilles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Typografi styles */
+h1 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  color: var(--hvid);
+  font-size: 50px;
+  padding-top: 10px;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--hvid);
+  font-size: 25px;
+}
+
+/* Overskrift til lille skærm */
+h3 {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  color: var(--orangem);
+  font-size: 30px;
+  padding-bottom: 3%;
+}
+/* Overskrift i footer */
+h4 {
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  margin-top: 10%;
+  color: var(--sort);
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: var(--orangel);
+  text-underline-offset: 6px;
+}
+
+h5 {
+  text-align: left;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  color: var(--hvid);
+  font-size: 30px;
+}
+
+
+/* Body'en styles */
+body {
+  background-color: var(--blue);
+}
+
+/* Billeder med fuld bredde styles bruges ved alle billeder*/
+.fuldbredde {
+  width: 100%;
+}
+
+/* Navigationsbar styles */
+.navbar{
+    z-index: 99;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    background-color: var(--grey);
+}
+
+.navbar a:hover{
+    opacity: 0.5;
+    transition: .2s;
+}
+
+.nav-links a{
+    color: var(--sort);
+    text-decoration-color: transparent;
+    text-underline-offset: 5px;
+    font-size: 1rem;
+}
+
+.nav-links a:hover{
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+.nav-links i{
+    color: var(--sort);
+    text-decoration-color: transparent;
+    text-underline-offset: 5px;
+}
+
+.nav-links i:hover{
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+.navbar {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin: -10px;
+    padding: 2rem 2rem;
+    background-color: var(--grey);
+    transition: all 300ms ease-in-out;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.logo img{
+    height: 4rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--sort);
+    padding: 1rem;
+    transition: color 0.2s ease;
+}
+
+/* Menu underside styles menu.html */
+.kryds {
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.menupunkter {
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--sort);
+  text-decoration: underline;
+  text-decoration-color: var(--orangel);
+  text-underline-offset: 8px;
+}
+
+
+/* FORSIDE STYLES */
+.video {
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+
+/* Billeder collage styles*/
+
+.collage {
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 50px;
+}
+
+
+
+/* Tekst med billede sættes op; forside */
+.forsideonepot {
+  display: flex;
+  width: 100%;
+  padding-bottom: 5px;
+  padding: 2%;
+}
+
+.forsideonepot1 {
+  padding-left: 1%;
+  padding-right: 3%;
+}
+
+.forsideonepot2 {
+  padding-left: 3%;
+  padding-right: 1%;
+}
+
+.forsideonepot2:hover {opacity: 10}
+.forsideonepot2 {
+  border: none;
+  padding: 16px 32px;
+  font-size: 30px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 18px;
+}
+
+.findops:hover {opacity: 10}
+.findops {
+  background-color: var(--grey);
+  border: none;
+  color: var(--sort);
+  padding: 16px 32px;
+  font-size: 40px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  border-radius: 18px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 500;
+  color: var(--orangel);
+}
+
+.forsideonepotlille {
+  display: none;
+}
+
+/* Hvid tekst styles til instagram nyeste posts*/
+.tekstinsta {
+  text-align: left;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  color: var(--hvid);
+  font-size: 25px;
+  padding-top: 10px;
+  padding-left: 10%;
+}
+
+/* OPSKRIFT UNDERSIDE STYLES*/
+  /* Række med tekst og billede*/
+
+.tekstopskrift1 {
+  display: none;
+}
+
+.billedermad {
+  display: flex;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.tekstopskrift {
+  flex: 33.3%;
+  text-align: center;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--orangem);
+  font-size: 20px;
+  padding: 5%;
+  background-color: var(--grey);
+}
+
+.billede1 {
+  flex: 33.3%;
+}
+
+.billede2 {
+  flex: 33.3%;
+}
+
+/* Opskrift styles  */
+.row6 {
+  display: flex;
+  width: 100%;
+}
+
+.column30 {
+  flex: 50%;
+  padding-top: 100px;
+  padding-left: 100px;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--hvid);
+}
+
+.column31 {
+  flex: 50%;
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-bottom: 100px;
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--hvid);
+}
+
+.column32 {
+  flex: 10%;
+  padding-top: 100px;
+  padding-left: 100px;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--hvid);
+}
+
+.column33 {
+  flex: 90%;
+  padding-top: 100px;
+  padding-left: 30px;
+  padding-right: 150px;
+  padding-bottom: 8%;
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--hvid);
+}
+
+/* UNDERSIDE FETTUCCINE*/
+  /* Øverste tekst styles*/
+
+.fettuccine1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Lora', serif;
+  font-weight: 500;
+  color: var(--hvid);
+  padding-top: 50px;
+}
+
+.fettuccine2 {
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  color: var(--orangem);
+  padding-bottom:50px;
+}
+
+
+
+
+/* UNDERSIDE OM URTEKRAM STYLES*/
+  /* Nederste tekst styles*/
+        .rowom {
+          display: flex;
+          width: 100%;
+        }
+
+        .columnom1 {
+          flex: 50%;
+          padding: 5%;
+          padding-left: 15%;
+          padding-right: 5%;
+          text-align: left;
+          font-size: 16px;
+          font-family: 'Lora', serif;
+          font-weight: 400;
+          color: var(--hvid);
+        }
+
+        .columnom2 {
+          flex: 50%;
+          padding: 5%;
+          padding-left: 5%;
+          padding-right: 15%;
+          text-align: left;
+          font-size: 16px;
+          font-family: 'Lora', serif;
+          font-weight: 400;
+          color: var(--hvid);
+        }
+
+        p.om {
+          color: var(--orangel);
+          text-align: left;
+          font-family: 'Dancing Script', cursive;
+          font-weight: 500;
+          font-size: 30px;
+        }
+
+/* Small devices (phones, 768px and down) */
+  @media only screen and (max-width: 767px) {
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .burger {
+      display: block;
+    }
+
+    /* FOOTER STYLES   */
+    footer {
+      background-color: var(--grey);
+
+    }
+
+    .row1 {
+      display: inline;
+      line-height: 2em;
+      margin: -10px;
+      text-align: center;
+      color: var(--sort);
+      font-family: 'Lora', serif;
+      font-weight: 400;
+
+    }
+
+    .row2 {
+      display: none;
+    }
+
+    .column4 {
+      margin-top: 5%;
+    }
+
+  .footer-menu a{
+      color: var(--sort);
+      text-decoration-color: transparent;
+      text-underline-offset: 5px;
+      font-size: 1rem;
+  }
+
+  .footer-menu a:hover{
+      text-decoration: underline;
+      transition: 0.8s;
+      color: var(--orangel);
+  }
+
+  .footer-menu i{
+      color: var(--sort);
+      text-decoration-color: transparent;
+      text-underline-offset: 5px;
+  }
+
+  .footer-menu i:hover{
+      text-decoration: underline;
+      transition: 0.8s;
+  }
+
+  .footer-menu{
+      text-decoration: none;
+      color: var(--sort);
+      transition: color 0.2s ease;
+  }
+
+/* FORSIDE STYLES NEDENUNDER*/
+
+/* h1 tekst gøres mindre*/
+    h1 {
+      font-size: 40px;
+    }
+
+/* Billede med onepot pasta vises og styles*/
+    .forsideonepotlille {
+      display: block;
+      padding-right: 15%;
+      padding-left: 15%;
+      padding-top: 5%;
+      padding-bottom: 7%;
+    }
+
+/* Billede fjernes på lille skærm*/
+    .forsideonepot2 {
+      display: none;
+    }
+
+/* h2 tekst gøres mindre*/
+    h2 {
+      font-size: 16px;
+      padding: 3%;
+    }
+
+/* Knap med link til opskrift gøres mindre*/
+    .findops {
+      font-size: 30px;
+      padding: 16px 32px;
+      margin: 4px 2px;
+    }
+
+/* Nyeste posts instagram*/
+    .nyesteinsta {
+      display: flex;
+      width: 100%;
+      padding: 5%;
+    }
+
+    .nyeste1 {
+      flex: 50%;
+      padding: 2%;
+    }
+
+    .nyeste2 {
+      flex: 50%;
+      padding: 2%;
+    }
+
+    .nyeste3 {
+      display: none;
+    }
+
+    .nyesteinstalille {
+      display: flex;
+      width: 100%;
+      padding: 5%;
+      margin-top: -40px;
+    }
+
+    .nyeste4 {
+      flex: 50%;
+      padding: 2%;
+    }
+
+    .nyeste5 {
+      flex: 50%;
+      padding: 2%;
+    }
+
+
+
+
+
+/* OPSKRIFT UNDERSIDE STYLES*/
+    /* Front tekst styles*/
+    .opskrift {
+      text-align: center;
+      color: var(--hvid);
+      font-family: 'Lora', serif;
+      font-weight: 300;
+      font-size: 20px;
+      padding-top: 50px;
+      }
+
+/* Række med tekst og billede*/
+.tekstopskrift {
+  display: none;
+
+}
+.tekstopskrift1 {
+  display: block;
+  text-align: center;
+  color: var(--hvid);
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 5%;
+}
+
+
+
+
+
+/* Ingredienser og fremgangsmåde styles  */
+.row6 {
+  display: flex;
+  width: 100%;
+}
+
+.column30 {
+  flex: 35%;
+  padding-top: 20px;
+  padding-left: 30px;
+  text-align: right;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--hvid);
+}
+
+.column31 {
+  flex: 65%;
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--hvid);
+}
+
+.column32 {
+  display: none;
+}
+
+.column33 {
+  display: none;
+}
+
+.fremgangsmådemobil {
+  flex: 100%;
+  padding:5%;
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  color: var(--hvid);
+}
+
+
+
+/* OM URTEKRAM STYLES NEDENUNDER*/
+    /* Vores historie tekst styles*/
+
+    .voreshistorie {
+      text-align: center;
+      font-size: 16px;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      color: var(--hvid);
+      margin: 7%;
+      line-height: 40px;
+    }
+
+
+    p.wecare {
+      background-color: rgba(225, 223, 211, 0.5);
+      border-radius: 12px;
+      padding: 5px;
+      color: var(--orangel);
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 500;
+      font-size: 25px;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+
+    .bæredygtig {
+      text-align: center;
+      font-size: 16px;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      color: var(--sort);
+      background-color: var(--grey);
+      padding: 10%;
+    }
+
+    p.øko {
+      padding: 5px;
+      color: var(--orangel);
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 500;
+      font-size: 30px;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+    /* Nederste tekst styles*/
+          .rowom {
+            display: inline;
+            width: 100%;
+          }
+
+          .columnom1 {
+            flex: 50%;
+            padding: 8%;
+            padding-left: 15%;
+            padding-right: 8%;
+            text-align: left;
+            font-size: 16px;
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            color: var(--hvid);
+          }
+
+          .columnom2 {
+            flex: 50%;
+            padding: 5%;
+            padding-left: 15%;
+            padding-right: 8%;
+            padding-bottom: 20%;
+            text-align: left;
+            font-size: 16px;
+            font-family: 'Lora', serif;
+            font-weight: 400;
+            color: var(--hvid);
+          }
+
+          p.om {
+            color: var(--orangel);
+            text-align: left;
+            font-family: 'Dancing Script', cursive;
+            font-weight: 500;
+            font-size: 30px;
+          }
+
+
+}
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+  /* Burgermenu skjules */
+  .burger {
+    display: none;
+  }
+
+  /* FOOTER STYLES   */
+  .row1 {
+    display: flex;
+    line-height: 2em;
+    margin: -10px;
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--sort);
+    font-family: 'Lora', serif;
+    font-weight: 400;
+  }
+
+  .row2 {
+    display: flex;
+    line-height: 2em;
+    margin: -10px;
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--sort);
+    font-family: 'Lora', serif;
+    font-weight: 400;
+  }
+
+  .column1 {
+    flex: 50%;
+  }
+
+  .column2 {
+    flex: 50%;
+  }
+
+  .column3 {
+    display: none;
+  }
+
+  .column4 {
+    display: none;
+  }
+
+  .column5 {
+    flex: 50%;
+  }
+
+  .column6 {
+    flex: 50%;
+    margin-top: 6%;
+  }
+
+
+    .footer-menu a{
+        color: var(--sort);
+        text-decoration-color: transparent;
+        text-underline-offset: 5px;
+        font-size: 1rem;
+    }
+
+    .footer-menu a:hover{
+        text-decoration: underline;
+        transition: 0.8s;
+        color: var(--orangel);
+    }
+
+    .footer-menu i{
+        color: var(--sort);
+        text-decoration-color: transparent;
+        text-underline-offset: 5px;
+    }
+
+    .footer-menu i:hover{
+        text-decoration: underline;
+        transition: 0.8s;
+    }
+
+    .footer-menu{
+        text-decoration: none;
+        color: var(--sort);
+        transition: color 0.2s ease;
+    }
+
+
+
+      /* FORSIDE STYLES NEDENUNDER*/
+          /* Nyeste posts instagram*/
+      .nyesteinsta {
+        display:  inline-flex;
+        width: 100%;
+        padding-top: 20px;
+        padding: 5px;
+        padding-bottom: 80px;
+      }
+
+      .nyeste1 {
+        margin: 10px;
+        padding-left: 10%;
+      }
+
+      .nyeste2 {
+        margin: 10px;
+      }
+
+      .nyeste3 {
+        margin: 10px;
+        padding-right: 10%;
+      }
+
+      .nyesteinstalille {
+        display: none;
+      }
+
+
+/* OPSKRIFT UNDERSIDE STYLES HER*/
+    /* Front tekst styles*/
+    .opskrift {
+      text-align: center;
+      color: var(--hvid);
+      font-family: 'Lora', serif;
+      font-weight: 300;
+      font-size: 15px;
+      padding-top: 50px;
+      padding-bottom: 5%;
+    }
+
+    .fremgangsmådemobil {
+      display: none;
+    }
+
+    .column32 {
+      display: none;
+    }
+
+    /* Række med tekst og billede*/
+    .tekstopskrift {
+      display: none;
+
+    }
+    .tekstopskrift1 {
+      display: block;
+      text-align: center;
+      color: var(--hvid);
+      font-family: 'Lora', serif;
+      font-weight: 300;
+      font-size: 20px;
+      padding: 5%;
+    }
+
+
+    /* OM URTEKRAM STYLES NEDENUNDER*/
+        /* Vores historie tekst styles*/
+
+        .voreshistorie {
+          text-align: center;
+          font-size: 16px;
+          font-family: 'Lora', serif;
+          font-weight: 400;
+          color: var(--hvid);
+          margin-left: 15%;
+          margin-right: 15%;
+          margin-top: 8%;
+          margin-bottom: 8%;
+          line-height: 40px;
+        }
+
+        p.wecare {
+          background-color: rgba(225, 223, 211, 0.5);
+          border-radius: 12px;
+          padding: 5px;
+          color: var(--orangel);
+          text-align: center;
+          font-family: 'Dancing Script', cursive;
+          font-weight: 500;
+          font-size: 35px;
+          margin-left: 8%;
+          margin-right: 8%;
+        }
+
+  /* Økologi og bæredygtighed*/
+        .bæredygtig {
+          text-align: center;
+          font-size: 20px;
+          font-family: 'Lora', serif;
+          font-weight: 400;
+          color: var(--sort);
+          background-color: var(--grey);
+          padding-left: 20%;
+          padding-right: 20%;
+          padding-top: 8%;
+          padding-bottom: 8%;
+          line-height: 40px;
+        }
+
+
+        p.øko {
+          padding: 5px;
+          color: var(--orangel);
+          text-align: center;
+          font-family: 'Dancing Script', cursive;
+          font-weight: 500;
+          font-size: 50px;
+          margin-left: 2%;
+          margin-right: 2%;
+        }
+
+
+
+  }
+
+
+/* Large devices (laptops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+  /* Burgermenu skjules */
+  .burger {
+    display: none;
+  }
+
+  /* FOOTER STYLES   */
+  .row1 {
+    display: flex;
+    line-height: 2em;
+    margin: -10px;
+    text-align: center;
+    background-color: var(--grey);
+    color: var(--sort);
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    z-index: 99;
+  }
+
+.row2 {
+  display: none;
+}
+
+  .column1 {
+    flex: 25%;
+  }
+
+  .column2 {
+    flex: 25%;
+  }
+
+  .column3 {
+    flex: 25%;
+    display: block;
+  }
+
+  .column4 {
+    flex: 25%;
+    margin-top: 6%;
+    display: block;
+  }
+
+
+  .footer-menu a{
+      color: var(--sort);
+      text-decoration-color: transparent;
+      text-underline-offset: 5px;
+      font-size: 1rem;
+  }
+
+  .footer-menu a:hover{
+      text-decoration: underline;
+      transition: 0.8s;
+      color: var(--orangel);
+  }
+
+  .footer-menu i{
+      color: var(--sort);
+      text-decoration-color: transparent;
+      text-underline-offset: 5px;
+  }
+
+  .footer-menu i:hover{
+      text-decoration: underline;
+      transition: 0.8s;
+  }
+
+  .footer-menu{
+      text-decoration: none;
+      color: var(--sort);
+      transition: color 0.2s ease;
+  }
+
+
+  /* FORSIDE STYLES NEDENUNDER*/
+      /* Nyeste posts instagram*/
+  .nyesteinsta {
+    display:  inline-flex;
+    width: 100%;
+    padding-top: 20px;
+    padding: 5px;
+    padding-bottom: 80px;
+  }
+
+  .nyeste1 {
+    margin: 10px;
+    padding-left: 10%;
+  }
+
+  .nyeste2 {
+    margin: 10px;
+  }
+
+  .nyeste3 {
+    margin: 10px;
+    padding-right: 10%;
+  }
+
+  .nyesteinstalille {
+    display: none;
+  }
+
+  /* OPSKRIFT UNDERSIDE STYLES HER*/
+    /* Front tekst styles*/
+.opskrift {
+  text-align: center;
+  color: var(--hvid);
+  font-family: 'Lora', serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 5%;
+}
+
+.fremgangsmådemobil {
+  display: none;
+}
+.column32 {
+  display: block;
+}
+
+/* Række med tekst og billede*/
+.tekstopskrift {
+  display: block;
+
+}
+.tekstopskrift1 {
+  display: none;
+}
+
+
+/* OM URTEKRAM STYLES NEDENUNDER*/
+    /* Vores historie tekst styles*/
+        .voreshistorie {
+          text-align: center;
+          font-size: 20px;
+          font-family: 'Lora', serif;
+          font-weight: 400;
+          color: var(--hvid);
+          margin-left: 25%;
+          margin-right: 25%;
+          margin-top: 5%;
+          margin-bottom: 8%;
+          line-height: 40px;
+        }
+
+        p.wecare {
+          background-color: rgba(225, 223, 211, 0.5);
+          border-radius: 12px;
+          padding: 5px;
+          color: var(--orangel);
+          text-align: center;
+          font-family: 'Dancing Script', cursive;
+          font-weight: 500;
+          font-size: 30px;
+          margin-left: 8%;
+          margin-right: 8%;
+        }
+
+
+
+  }

@@ -11,20 +11,21 @@
   --grey: #e1dfd3;
 }
 
-/*Fonte*/
+/*Fonte importeres*/
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap');
 /*font-family: 'Lora', serif;*/
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&display=swap');
 /*font-family: 'Dancing Script', cursive;*/
 
+
 /* Samlet layout opstilles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
+
 
 /* Typografi styles */
 h1 {
@@ -53,6 +54,7 @@ h3 {
   font-size: 30px;
   padding-bottom: 3%;
 }
+
 /* Overskrift i footer */
 h4 {
   text-align: center;
@@ -80,10 +82,12 @@ body {
   background-color: var(--blue);
 }
 
+
 /* Billeder med fuld bredde styles bruges ved alle billeder*/
 .fuldbredde {
   width: 100%;
 }
+
 
 /* Navigationsbar styles */
 .navbar{
@@ -146,7 +150,8 @@ body {
     transition: color 0.2s ease;
 }
 
-/* Menu underside styles menu.html */
+/* UNDERSIDE MENU STYLES */
+/* Kryds og menupunkter styles */
 .kryds {
   text-align: right;
   padding-right: 30px;
@@ -166,20 +171,19 @@ body {
 
 
 /* FORSIDE STYLES */
+/* Video på forside styles */
 .video {
   width: 100%;
   padding-bottom: 5%;
 }
 
 
-/* Billeder collage styles*/
-
+/* Billede collage styles*/
 .collage {
   padding-left: 20%;
   padding-right: 20%;
   padding-top: 50px;
 }
-
 
 
 /* Tekst med billede sættes op; forside */
@@ -231,6 +235,7 @@ body {
   display: none;
 }
 
+
 /* Hvid tekst styles til instagram nyeste posts*/
 .tekstinsta {
   text-align: left;
@@ -242,9 +247,11 @@ body {
   padding-left: 10%;
 }
 
-/* OPSKRIFT UNDERSIDE STYLES*/
-  /* Række med tekst og billede*/
 
+
+
+/* OPSKRIFT UNDERSIDE STYLES*/
+/* Række med tekst og billede styles*/
 .tekstopskrift1 {
   display: none;
 }
@@ -261,11 +268,12 @@ body {
   text-align: center;
   font-family: 'Lora', serif;
   font-weight: 400;
-  color: var(--orangem);
+  color: var(--blue);
   font-size: 20px;
   padding: 5%;
   background-color: var(--grey);
 }
+
 
 .billede1 {
   flex: 33.3%;
@@ -275,7 +283,7 @@ body {
   flex: 33.3%;
 }
 
-/* Opskrift styles  */
+/* Opskrift og fremgangsmåde styles  */
 .row6 {
   display: flex;
   width: 100%;
@@ -328,9 +336,11 @@ body {
   color: var(--hvid);
 }
 
-/* UNDERSIDE FETTUCCINE*/
-  /* Øverste tekst styles*/
 
+
+
+/* UNDERSIDE FETTUCCINE*/
+/* Øverste tekst styles*/
 .fettuccine1 {
   text-align: center;
   font-size: 50px;
@@ -353,7 +363,7 @@ body {
 
 
 /* UNDERSIDE OM URTEKRAM STYLES*/
-  /* Nederste tekst styles*/
+/* Nederste tekst styles*/
         .rowom {
           display: flex;
           width: 100%;
@@ -391,23 +401,23 @@ body {
           font-size: 30px;
         }
 
+
+/* MEDIA RULES FOR LILLE SKÆRM*/
 /* Small devices (phones, 768px and down) */
   @media only screen and (max-width: 767px) {
 
-
+/*Navigation styles til lille skærm*/
     .nav-links {
         display: none;
     }
-
 
     .burger {
       display: block;
     }
 
-    /* FOOTER STYLES   */
+/* FOOTER STYLES til lille skærm */
     footer {
       background-color: var(--grey);
-
     }
 
     .row1 {
@@ -418,7 +428,6 @@ body {
       color: var(--sort);
       font-family: 'Lora', serif;
       font-weight: 400;
-
     }
 
     .row2 {
@@ -459,12 +468,13 @@ body {
       transition: color 0.2s ease;
   }
 
-/* FORSIDE STYLES NEDENUNDER*/
 
+/* FORSIDE TIL LILLE SKÆRM STYLES NEDENUNDER*/
 /* h1 tekst gøres mindre*/
     h1 {
       font-size: 40px;
     }
+
 
 /* Billede med onepot pasta vises og styles*/
     .forsideonepotlille {
@@ -475,10 +485,12 @@ body {
       padding-bottom: 7%;
     }
 
+
 /* Billede fjernes på lille skærm*/
     .forsideonepot2 {
       display: none;
     }
+
 
 /* h2 tekst gøres mindre*/
     h2 {
@@ -486,12 +498,15 @@ body {
       padding: 3%;
     }
 
+
 /* Knap med link til opskrift gøres mindre*/
     .findops {
       font-size: 30px;
       padding: 16px 32px;
       margin: 4px 2px;
+      opacity: 1;
     }
+
 
 /* Nyeste posts instagram*/
     .nyesteinsta {
@@ -533,10 +548,8 @@ body {
 
 
 
-
-
-/* OPSKRIFT UNDERSIDE STYLES*/
-    /* Front tekst styles*/
+/* OPSKRIFT UNDERSIDE TIL LILLE SKÆRM STYLES*/
+/* Front tekst styles*/
     .opskrift {
       text-align: center;
       color: var(--hvid);
@@ -546,11 +559,12 @@ body {
       padding-top: 50px;
       }
 
+
 /* Række med tekst og billede*/
 .tekstopskrift {
   display: none;
-
 }
+
 .tekstopskrift1 {
   display: block;
   text-align: center;
@@ -560,9 +574,6 @@ body {
   font-size: 20px;
   padding: 5%;
 }
-
-
-
 
 
 /* Ingredienser og fremgangsmåde styles  */
@@ -614,9 +625,8 @@ body {
 
 
 
-/* OM URTEKRAM STYLES NEDENUNDER*/
-    /* Vores historie tekst styles*/
-
+/* OM URTEKRAM TIL LILLE SKÆRM STYLES NEDENUNDER*/
+/* Vores historie tekst styles*/
     .voreshistorie {
       text-align: center;
       font-size: 16px;
@@ -629,10 +639,10 @@ body {
 
 
     p.wecare {
-      background-color: rgba(225, 223, 211, 0.5);
+      background-color: var(--grey);
       border-radius: 12px;
       padding: 5px;
-      color: var(--orangel);
+      color: var(--orangem);
       text-align: center;
       font-family: 'Dancing Script', cursive;
       font-weight: 500;
@@ -641,7 +651,7 @@ body {
       margin-right: 2%;
     }
 
-
+/* Økologi og bæredygtighed tekst styles*/
     .bæredygtig {
       text-align: center;
       font-size: 16px;
@@ -663,7 +673,8 @@ body {
       margin-right: 2%;
     }
 
-    /* Nederste tekst styles*/
+
+  /* Nederste tekst styles*/
           .rowom {
             display: inline;
             width: 100%;
@@ -703,16 +714,82 @@ body {
           }
 
 
+
+
+/* FETTUCCINE UNDERSIDE STYLES NEDENUNDER*/
+/* Tekst og billede om Familien styles*/
+    .row8 {
+      display: flex;
+      width: 100%;
+      line-height: 2em;
+      padding-top: 10%;
+      padding-bottom: 5%;
+      }
+
+    .column7 {
+      padding-left: 10%;
+      padding-right: 10%;
+      }
+
+    .column8 {
+      display: none;
+      }
+
+    .familie1 {
+      font-size: 40px;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 400;
+      color: var(--orangem);
+      padding-bottom: 5%;
+      }
+
+      .familie3 {
+        font-size: 20px;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 400;
+        color: var(--orangem);
+      }
+
+    .familiemobil {
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      color: var(--hvid);
+      padding-right: 10%;
+      padding-left: 10%;
+      padding-bottom: 10%;
+      }
+
+/* Næringsindholdsbillede styles*/
+      .næringsindhold {
+        font-size: 30px;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 400;
+        color: var(--orangem);
+        text-align: center;
+        padding-bottom: 3%;
+      }
+
+      .næringsindhold1 {
+        padding-bottom: 25%;
+      }
+
 }
+
+
+/* MEDIA RULES FOR MELLEM SKÆRM*/
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
 
-  /* Burgermenu skjules */
+
+/* Burgermenu skjules */
   .burger {
     display: none;
   }
 
-  /* FOOTER STYLES   */
+/* FOOTER STYLES   */
   .row1 {
     display: flex;
     line-height: 2em;
@@ -760,7 +837,6 @@ body {
     margin-top: 6%;
   }
 
-
     .footer-menu a{
         color: var(--sort);
         text-decoration-color: transparent;
@@ -793,8 +869,8 @@ body {
 
 
 
-      /* FORSIDE STYLES NEDENUNDER*/
-          /* Nyeste posts instagram*/
+/* FORSIDE STYLES NEDENUNDER*/
+/* Nyeste posts instagram*/
       .nyesteinsta {
         display:  inline-flex;
         width: 100%;
@@ -842,7 +918,7 @@ body {
       display: none;
     }
 
-    /* Række med tekst og billede*/
+/* Række med tekst og billede*/
     .tekstopskrift {
       display: none;
 
@@ -858,9 +934,10 @@ body {
     }
 
 
-    /* OM URTEKRAM STYLES NEDENUNDER*/
-        /* Vores historie tekst styles*/
 
+
+/* OM URTEKRAM STYLES NEDENUNDER*/
+  /* Vores historie tekst styles*/
         .voreshistorie {
           text-align: center;
           font-size: 16px;
@@ -875,10 +952,10 @@ body {
         }
 
         p.wecare {
-          background-color: rgba(225, 223, 211, 0.5);
+          background-color: var(--grey);
           border-radius: 12px;
           padding: 5px;
-          color: var(--orangel);
+          color: var(--orangem);
           text-align: center;
           font-family: 'Dancing Script', cursive;
           font-weight: 500;
@@ -887,7 +964,7 @@ body {
           margin-right: 8%;
         }
 
-  /* Økologi og bæredygtighed*/
+/* Økologi og bæredygtighed*/
         .bæredygtig {
           text-align: center;
           font-size: 20px;
@@ -916,9 +993,79 @@ body {
 
 
 
+
+/* FETTUCCINE UNDERSIDE STYLES NEDENUNDER*/
+    /* Infographic styles*/
+    .infographic {
+      padding-left: 20%;
+      padding-right: 20%;
+      }
+
+
+    /* Tekst og billede om familien styles*/
+      .row8 {
+        display: flex;
+        width: 100%;
+        line-height: 2em;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        }
+
+        .column7 {
+          flex: 40%;
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+
+        .column8 {
+          flex: 60%;
+          text-align: left;
+          font-size: 16px;
+          font-family: 'Lora', serif;
+          font-weight: 400;
+          color: var(--hvid);
+          padding-right: 10%;
+          }
+
+          .familie1 {
+            font-size: 50px;
+            font-family: 'Dancing Script', cursive;
+            font-weight: 400;
+            color: var(--orangem);
+            padding-bottom: 5%;
+          }
+
+          .familie3 {
+            font-size: 35px;
+            font-family: 'Dancing Script', cursive;
+            font-weight: 400;
+            color: var(--orangem);
+          }
+
+          .familiemobil {
+            display: none;
+          }
+
+
+/* Næringsindholdsbillede styles*/
+          .næringsindhold {
+            font-size: 50px;
+            font-family: 'Dancing Script', cursive;
+            font-weight: 400;
+            color: var(--orangem);
+            text-align: center;
+            padding-bottom: 5%;
+          }
+
+          .næringsindhold1 {
+            padding-bottom: 25%;
+          }
+
+
+
   }
 
-
+/* MEDIA RULES FOR STOR SKÆRM */
 /* Large devices (laptops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
@@ -940,9 +1087,9 @@ body {
     z-index: 99;
   }
 
-.row2 {
-  display: none;
-}
+    .row2 {
+      display: none;
+    }
 
   .column1 {
     flex: 25%;
@@ -995,8 +1142,8 @@ body {
   }
 
 
-  /* FORSIDE STYLES NEDENUNDER*/
-      /* Nyeste posts instagram*/
+/* FORSIDE STYLES NEDENUNDER*/
+  /* Nyeste posts instagram*/
   .nyesteinsta {
     display:  inline-flex;
     width: 100%;
@@ -1023,7 +1170,10 @@ body {
     display: none;
   }
 
-  /* OPSKRIFT UNDERSIDE STYLES HER*/
+
+
+
+/* OPSKRIFT UNDERSIDE STYLES HER*/
     /* Front tekst styles*/
 .opskrift {
   text-align: center;
@@ -1051,6 +1201,10 @@ body {
   display: none;
 }
 
+/* Overskrift ændre farve*/
+h3{
+  color: var(--blue);
+}
 
 /* OM URTEKRAM STYLES NEDENUNDER*/
     /* Vores historie tekst styles*/
@@ -1068,10 +1222,10 @@ body {
         }
 
         p.wecare {
-          background-color: rgba(225, 223, 211, 0.5);
+          background-color: var(--grey);
           border-radius: 12px;
           padding: 5px;
-          color: var(--orangel);
+          color: var(--orangem);
           text-align: center;
           font-family: 'Dancing Script', cursive;
           font-weight: 500;
@@ -1080,6 +1234,77 @@ body {
           margin-right: 8%;
         }
 
+
+
+
+
+/* FETTUCCINE UNDERSIDE STYLES NEDENUNDER*/
+    /* Infographic styles*/
+    .infographic {
+      padding-left: 30%;
+      padding-right: 30%;
+    }
+
+/* Tekst og billede om familien styles*/
+    .row8 {
+      display: flex;
+      width: 100%;
+      line-height: 2em;
+      padding-top: 10%;
+      padding-bottom: 5%;
+    }
+
+    .column7 {
+      flex: 50%;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+
+    .column8 {
+      flex: 50%;
+      text-align: left;
+      font-size: 16px;
+      font-family: 'Lora', serif;
+      font-weight: 400;
+      color: var(--hvid);
+      padding-top: 15%;
+      padding-right: 10%;
+    }
+
+    .familie1 {
+      font-size: 70px;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 400;
+      color: var(--orangem);
+      padding-bottom: 5%;
+    }
+
+    .familie3 {
+      font-size: 35px;
+      font-family: 'Dancing Script', cursive;
+      font-weight: 400;
+      color: var(--orangem);
+    }
+
+    .familiemobil {
+      display: none;
+    }
+
+/* Næringsindholdsbillede styles*/
+.næringsindhold {
+  font-size: 45px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 400;
+  color: var(--orangem);
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.næringsindhold1 {
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 10%;
+}
 
 
   }
